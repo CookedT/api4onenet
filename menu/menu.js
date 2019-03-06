@@ -32,12 +32,12 @@ exports.createMenu = function()
 {
 	  console.log('createMenu in');
     var WechatAPI = require('wechat-api');
-    var api = new WechatAPI('wxf6e3217b93ca3a56', 'ddaffbd2135f3cc87a70b9cab34da85a');
+    var api = new WechatAPI('', '');
     //var api = new WechatAPI(config.config.appid, config.config.appsecret);
     
     //var API = require('wechat-api');
     //var api = new API(config.config.appid, config.config.appsecret); 
-    //var api = new API('wxf6e3217b93ca3a56', 'd4624c36b6795d1d99dcf0547af5443d'); 
+    //var api = new API('', ''); 
     console.log('createMenu in 1');
     api.getAccessToken(function (err, token) 
     {  
