@@ -15,14 +15,14 @@ router.use('/', wechat(config, function (req, res, next)
     console.log('MsgType =' + message.MsgType);
     console.log('MsgContent =' + message.Content);
     var WechatAPI = require('wechat-api');
-    var api = new WechatAPI('wx46c8568005f04c80', '37a1bec4330af27e8fc2a90fd133d9fc');
+    var api = new WechatAPI('', '');
     if (message.FromUserName === 'diaosi') 
     {
         // 回复屌丝(普通回复)
         res.reply('hehe');
     }
     //For menu creation only
-    else if((message.FromUserName == 'oFYSY1P9lticla_mPR0Hi2F1GFI0') && (message.Content == 'createMenu'))//Raiden's OpenID
+    else if((message.FromUserName == '') && (message.Content == 'createMenu'))
     {
         //if(message.content == 'createMenu')
         {
@@ -40,7 +40,7 @@ router.use('/', wechat(config, function (req, res, next)
                content: '谢谢你的关注！',
                type: 'text'
             });
-            /*api.sendImage(message.FromUserName, 'Hr67AFS-o-1YqBSjTI5Yg_tDEtSkJoWNRi0nQoJJOQc', function (err, result) {
+            /*api.sendImage(message.FromUserName, '', function (err, result) {
                 res.reply({
                    content: JSON.stringify(result),
                    type: 'text'
@@ -108,7 +108,7 @@ router.use('/', wechat(config, function (req, res, next)
                     api.sendText(message.FromUserName, '这是第二条主动消息', function (err, result) {});
                 });
                 
-                /*api.sendImage(message.FromUserName, 'Hr67AFS-o-1YqBSjTI5Yg_tDEtSkJoWNRi0nQoJJOQc', function (err, result) {
+                /*api.sendImage(message.FromUserName, '', function (err, result) {
                     res.reply({
                        content: JSON.stringify(result),
                        type: 'text'
