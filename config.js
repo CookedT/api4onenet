@@ -1,13 +1,13 @@
 var wecharConfig = {
-    token: 'testweixin',
-    appid: 'wx46c8568005f04c80',
-    appsecret:'37a1bec4330af27e8fc2a90fd133d9fc',
+    token: '',
+    appid: '',
+    appsecret:'',
     encodingAESKey: '',
 };
 
 var onenetConfig = {
-	productID: '214410',
-	masterAPIKey: 'bHYoTlqzhICGHCH=3rZWTsUkAqY='
+	productID: '',  // 产品ID
+	masterAPIKey: '' // 产品masterAPIKey
 }
 
 module.exports = {
