@@ -72,8 +72,8 @@ router.use('/', wechat(config, function (req, res, next)
                 res.reply([{
                     title: '测试图文消息',
                     description: '测试图文消息-1',
-                    picurl: 'http://m.12ky.com/UploadFiles/1538/2018112014113315454.png',
-                    url: 'https://mp.weixin.qq.com/s?__biz=MzU2Njc2NTA3Nw==&mid=2247483678&idx=1&sn=dbcacdfed79ef6a81b100ae58f3f614b&chksm=fca63264cbd1bb726af29d9bd6f7921a1128c4184d42dc7be53451ea5ca3a8e866e7d710893e&token=1457358626&lang=zh_CN#rd'
+                    picurl: '',
+                    url: ''
                 }]);
             }
             else if (content == 'test')
